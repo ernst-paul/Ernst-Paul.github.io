@@ -1,0 +1,77 @@
+@keyframes animation-1 {
+  0%   {opacity: 1;}
+  25%  {opacity: 1;}
+  75%  {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes animation-2 {
+  0%   {opacity: 1;}
+  25%  {opacity: 1;}
+  75%  {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+.landing-page {
+  position: relative;
+  width: 100%;
+}
+
+.landing-background-1 {
+  background: linear-gradient(238.72deg, #0044A9 0%, #F700A3 100%), radial-gradient(100% 188.01% at 76.14% 0%, #43DDFF 0%, #FF0000 100%), linear-gradient(0deg, #DB00FF 0%, #14FF00 100%), radial-gradient(59.2% 100% at 50% 100%, #6A00D5 0%, #00E0FF 100%), radial-gradient(100% 148.07% at 0% 0%, #FF9900 0%, #001AFF 100%);
+  background-blend-mode: hard-light, overlay, color-burn, color-burn, normal;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+.landing-background-2 {
+  background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), radial-gradient(100% 233.99% at 0% 100%, #B70000 0%, #AD00FF 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+  background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 1;
+  z-index: 2;
+  animation-name: animation-1;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+.landing-background-3 {
+  background: linear-gradient(126.95deg, #000000 0%, #F9FFB1 100%), radial-gradient(91.23% 100% at 50% 100%, #BE002E 0%, #6100FF 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+  background-blend-mode: overlay, difference, difference, normal;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 1;
+  z-index: 3;
+  animation-name: animation-2;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+}
+
+.landing-content {
+  position: relative;
+  z-index: 3;
+}
+
+/*
+background: linear-gradient(238.72deg, #0044A9 0%, #F700A3 100%), radial-gradient(100% 188.01% at 76.14% 0%, #43DDFF 0%, #FF0000 100%), linear-gradient(0deg, #DB00FF 0%, #14FF00 100%), radial-gradient(59.2% 100% at 50% 100%, #6A00D5 0%, #00E0FF 100%), radial-gradient(100% 148.07% at 0% 0%, #FF9900 0%, #001AFF 100%);
+background-blend-mode: hard-light, overlay, color-burn, color-burn, normal;
+
+background: linear-gradient(126.95deg, #000000 0%, #F9FFB1 100%), radial-gradient(91.23% 100% at 50% 100%, #BE002E 0%, #6100FF 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+background-blend-mode: overlay, difference, difference, normal;
+
+background: linear-gradient(114.95deg, rgba(235, 0, 255, 0.5) 0%, rgba(0, 71, 255, 0) 34.35%), linear-gradient(180deg, #004B5B 0%, #FFA7A7 100%), linear-gradient(244.35deg, #FFB26A 0%, #3676B1 50.58%, #00A3FF 100%), linear-gradient(244.35deg, #FFFFFF 0%, #004A74 49.48%, #FF0000 100%), radial-gradient(100% 233.99% at 0% 100%, #B70000 0%, #AD00FF 100%), linear-gradient(307.27deg, #1DAC92 0.37%, #2800C6 100%), radial-gradient(100% 140% at 100% 0%, #EAFF6B 0%, #006C7A 57.29%, #2200AA 100%);
+background-blend-mode: hard-light, overlay, overlay, overlay, difference, difference, normal;
+*/
