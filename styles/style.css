@@ -1,14 +1,14 @@
 @keyframes animation-1 {
   0%   {opacity: 1;}
-  25%  {opacity: 1;}
-  75%  {opacity: 1;}
+  30%  {opacity: 1;}
+  70%  {opacity: 1;}
   100% {opacity: 0;}
 }
 
 @keyframes animation-2 {
   0%   {opacity: 1;}
-  25%  {opacity: 1;}
-  75%  {opacity: 0;}
+  30%  {opacity: 1;}
+  70%  {opacity: 0;}
   100% {opacity: 0;}
 }
 
@@ -37,10 +37,10 @@
   opacity: 1;
   z-index: 2;
   animation-name: animation-1;
-  animation-duration: 9s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
 }
 
 .landing-background-3 {
@@ -53,10 +53,10 @@
   opacity: 1;
   z-index: 3;
   animation-name: animation-2;
-  animation-duration: 9s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in;
 }
 
 .landing-content {
