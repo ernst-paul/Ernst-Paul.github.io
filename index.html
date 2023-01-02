@@ -42,7 +42,7 @@
 
     <!-- content -->
     <div class="container pt-5">
-      <div class="text-center">
+      <div class="text-center pb-5">
         <img src="images/profile.png" class="img-fluid", width="225" height="225">
         <h2 class="text-white pt-3 fs-2">Hello, I'm Ernst Paul Swens &#128075;</h2>
         <h2 class="text-white text-opacity-50 fs-5 pb-5">
@@ -50,33 +50,38 @@
           I also work for Microsoft as a Cloud Solution Architect.
         </h2>
         <p class="fs-6 fw-bold text-white mb-0">You can approach me via</p>
+
+
         <ul class="nav justify-content-center">
           <li class="nav-item">
-            <a class="nav-link px-2 fs-3" href="https://www.linkedin.com/in/ernst-paul-swens"
-                data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+            <a class="nav-link px-3 m-0 fs-3 hover-text" href="https://www.linkedin.com/in/ernst-paul-swens">
               <i class="text-white bi bi-linkedin"></i>
+              <span class="tooltip-text" id="linkedin">LinkedIn</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 fs-3" href="https://github.com/Ernst-Paul"
-               data-bs-toggle="tooltip" data-bs-placement="top" title="Github">
+            <a class="nav-link px-3 m-0 fs-3 hover-text" href="https://github.com/Ernst-Paul">
               <i class="text-white bi bi-github"></i>
+              <span class="tooltip-text" id="github">Github</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-2 fs-3" href="mailto:epswens@gmail.com"
-               data-bs-toggle="tooltip" data-bs-placement="top" title="Email">
+            <a class="nav-link px-3 m-0 fs-3 hover-text" href="mailto:epswens@gmail.com">
               <i class="text-white bi bi-envelope-fill"></i>
+              <span class="tooltip-text" id="email">Email</span>
             </a>
           </li>
         </ul>
+
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <script>
-      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-      const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
     </script>
   </body>
 </html>

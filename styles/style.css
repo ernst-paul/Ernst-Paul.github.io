@@ -7,3 +7,40 @@ body {
   background-blend-mode: screen, overlay, hard-light, normal;
   background-repeat: no-repeat;
 }
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  font-size: 12px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+}
+
+.hover-text:hover .tooltip-text {
+  visibility: visible;
+}
+
+#linkedin {
+  top: 55px;
+  left: -10px;
+}
+
+#email {
+  top: 55px;
+  left: -1px;
+}
+
+#github {
+  top: 55px;
+  left: -5px;
+}
+
+.hover-text {
+  position: relative;
+  display: inline-block;
+  margin: 0px;
+  text-align: center;
+}
