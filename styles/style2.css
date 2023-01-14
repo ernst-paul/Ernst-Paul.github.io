@@ -90,7 +90,7 @@ body {
   display: inline-block;
 }
 
-@keyframes wave-animation {
+@-webkit-keyframes wave-animation {
     0% { transform: rotate( 0.0deg) }
    10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
    20% { transform: rotate(-8.0deg) }
