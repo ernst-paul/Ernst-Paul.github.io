@@ -12,6 +12,8 @@
 
 .list-group-item.active {
   opacity: 1.0;
+  padding-left: 15px;
+  transition: 300ms padding;
 }
 
 .list-group-item:hover {
@@ -48,4 +50,23 @@
 .letter-space {
   letter-spacing: 2px;
   font-size: 11px;
+}
+
+#top {
+  position: fixed;
+  width: 100vw;
+  height: 50px;
+  background: rgb(17,17,17);
+  background: linear-gradient(180deg, rgba(17,17,17,1) 11%, rgba(17,17,17,0) 100%);
+  z-index: 10000;
+}
+
+#bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 50px;
+  background: rgb(17,17,17);
+  background: linear-gradient(360deg, rgba(17,17,17,1) 11%, rgba(17,17,17,0) 100%);
+  z-index: 10000;
 }
