@@ -4,85 +4,289 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello &#128075;</title>
+    <title>Ernst Paul Swens</title>
 
-    <!-- stylesheets -->
+    <!-- bootstrap stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles.css">
 
     <!-- favicon -->
     <link rel="icon" type="image/png" href="images/icon.png"/>
     <link rel="apple-touch-icon" href="images/icon.png">
-
   </head>
-  <body style="
-    background: linear-gradient(45deg, #000850 0%, #000320 100%), radial-gradient(100% 225% at 100% 0%, #FF6928 0%, #000000 100%), linear-gradient(225deg, #FF7A00 0%, #000000 100%), linear-gradient(135deg, #CDFFEB 10%, #CDFFEB 35%, #009F9D 35%, #009F9D 60%, #07456F 60%, #07456F 67%, #0F0A3C 67%, #0F0A3C 100%);
-    background-blend-mode: screen, overlay, hard-light, normal;
-    background-repeat: no-repeat;"
-  >
 
-    <!-- navigation -->
-    <nav class="navbar navbar-expand py-4">
-      <div class="container">
-        <a class="navbar-brand link-light" href="#">
-          <span class="fs-2 ps-1 fw-semibold"><i class="bi bi-bookmarks-fill"></i></span>
-        </a>
+  <body style="background-color: rgb(17, 17, 17);">
 
-        <div class="mt-1">
-          <ul class="navbar-nav">
-            <li class="nav-item ps-3">
-              <a class="nav-link link-light" href="./About.html">About</a>
-            </li>
-            <li class="nav-item ps-3">
-              <a class="nav-link link-light" href="./CV.html">CV</a>
-            </li>
-            <li class="nav-item ps-3">
-              <a class="nav-link link-light" href="./Projects.html">Projects</a>
-            </li>
-            <li class="nav-item ps-3">
-              <a class="nav-link link-light" href="./Research.html">Research</a>
-            </li>
-          </ul>
+    <div id="top"></div>
+
+    <div class="container text-white">
+      <div class="row">
+        <div class="col-md-12 col-lg-4">
+          <div class="sticky-md-top" id="side-nav" style="overflow-y: scroll; max-height: 100vh; padding-top: 75px;">
+            <h1 class="display-4 fw-bold">Ernst Paul Swens</h1>
+            <h1 class="fs-4">Data Scientist</h1>
+            <p class="pt-4 lh-lg small"><span class="opacity-50">I pursue a Master's degree in Statistics & Methodology and hold a Master's degree in Applied Data Science from </span> <a href="https://www.uu.nl/" target="_blank" class="link-light">Utrecht University</a><span class="opacity-50">. Nunc nec porta sapien, eget suscipit leo. Vestibulum consectetur facilisis suscipit. Maecenas pulvinar lacus sed hendrerit rhoncus.</span></p>
+
+            <div id="list-example">
+              <a class="list-group-item list-group-item-action text-uppercase fw-bold text-decoration-none letter-space py-1" href="#projects">Projects</a>
+              <a class="list-group-item list-group-item-action text-uppercase fw-bold text-decoration-none letter-space py-1" href="#research">Research</a>
+              <a class="list-group-item list-group-item-action text-uppercase fw-bold text-decoration-none letter-space py-1" href="#experience">Experience</a>
+              <a class="list-group-item list-group-item-action text-uppercase fw-bold text-decoration-none letter-space py-1" href="#education">Education</a>
+            </div>
+
+            <div class="d-flex align-items-center pt-4">
+              <div class="flex-fill pe-5">
+                <span>
+                  <embed src="images/logo.svg">
+                </span>
+              </div>
+              <div class="flex-fill">
+                <div class="flex-fill">
+                  <a class="nav-link d-flex flex-column align-items-center link-light text-decoration-none px-3" href="https://github.com/Ernst-Paul" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Github">
+                    <i class="h2 mb-0 bi bi-github"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="flex-fill">
+                <a class="nav-link d-flex flex-column align-items-center link-light text-decoration-none px-3" href="https://www.linkedin.com/in/ernst-paul-swens/" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="LinkedIn">
+                  <i class="h2 mb-0 bi bi-linkedin"></i>
+                </a>
+              </div>
+              <div class="flex-fill">
+                <a class="nav-link d-flex flex-column align-items-center link-light text-decoration-none px-3" href="mailto:epswens@gmail.com" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="E-mail">
+                  <i class="h2 mb-0 bi bi-envelope-at-fill"></i>
+                </a>
+              </div>
+            </div>
+
+
+
+
+          </div>
         </div>
-      </div>
-    </nav>
+        <div class="col-md-12 offset-lg-2 col-lg-6" style="padding-top: 75px;">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" data-bs-offset="-50">
 
-    <!-- content -->
-    <div class="container pt-5">
-      <div class="text-center pb-5">
-        <img src="images/profile.png" class="img-fluid", width="225" height="225">
-        <h2 class="text-white pt-3 fs-2">Hello &#128075;, I am Ernst Paul Swens</h2>
-        <h2 class="text-white text-opacity-50 fs-5 pb-5">
-          I study statistics &#38; methodology at Utrecht University and <br>hold a master's degree in applied data science.
-        </h2>
-        <p class="fs-6 fw-bold text-white mb-0">You can approach me via</p>
+              <div id="projects" class="fade-out-siblings">
+                <div class="card mb-2">
+                  <a class="text-decoration-none text-white p-4" href="https://github.com/gerkovink/dessert" target="_blank">
+                    <div class="card-body">
+                      <span class="text-uppercase fw-bold letter-space text-truncate">contract project</span>
+                      <h4 class="fw-semibold text-truncate">R Package: Dessert &#127856;</h4>
+                      <p class="small mb-3 text-truncate"><span class="opacity-50">We developed a standardized evaluation approach of data analysis.</span></p>
+                      <div class="d-flex flex-row bd-highlight mb-0">
+                        <div class="letter-space mb-0 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-calendar-week text-truncate"></i> 29 september 2022</small>
+                        </div>
+                        <div class="letter-space mb-0 ms-3 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-buildings"></i> Utrecht University</small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
 
+                <div class="card mb-2">
+                  <a class="text-decoration-none text-white p-4" href="https://github.com/Ernst-Paul/Comparing-VA-and-Non-VA" target="_blank">
+                    <div class="card-body">
+                      <span class="text-uppercase fw-bold letter-space text-truncate">freelance project</span>
+                      <h4 class="fw-semibold">Comparing the Effectiveness of Treatment for Post-Traumatic Stress Disorder (PTSD) In Veterans and Non-Veterans</h4>
+                      <p class="small mb-3 text-truncate"><span class="opacity-50">We applied Bayesian regression to identify if veterans</span> &#127894; <span class="opacity-50">respond different to treatment compared to non-veterans.</span></p>
+                      <div class="d-flex flex-row bd-highlight mb-0">
+                        <div class="letter-space mb-0 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-calendar-week text-truncate"></i> 29 August 2022</small>
+                        </div>
+                        <div class="letter-space mb-0 ms-3 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-buildings"></i> Psytrec</small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
 
-        <ul class="nav justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link px-3 m-0 fs-3 hover-text" href="https://www.linkedin.com/in/ernst-paul-swens">
-              <i class="text-white bi bi-linkedin"></i>
-              <span class="tooltip-text" id="linkedin">LinkedIn</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 m-0 fs-3 hover-text" href="https://github.com/Ernst-Paul">
-              <i class="text-white bi bi-github"></i>
-              <span class="tooltip-text" id="github">Github</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link px-3 m-0 fs-3 hover-text" href="mailto:epswens@gmail.com">
-              <i class="text-white bi bi-envelope-fill"></i>
-              <span class="tooltip-text" id="email">Email</span>
-            </a>
-          </li>
-        </ul>
+                <div class="card mb-2">
+                  <a class="text-decoration-none text-white p-4" href="https://github.com/Ernst-Paul/Gibbs-Sampler" target="_blank">
+                    <div class="card-body">
+                      <span class="text-uppercase fw-bold letter-space text-truncate">school project</span>
+                      <h4 class="fw-semibold">Bayesian Inference: Gibbs Sampling</h4>
+                      <p class="small mb-3 text-truncate"><span class="opacity-50">We created a Markov chain Monte Carlo (MCMC)</span> &#127922;<span class="opacity-50"> algorithm for obtaining a sequence of observations which are approximated from a specified multivariate probability distribution.</span></p>
+                      <div class="d-flex flex-row bd-highlight mb-0">
+                        <div class="letter-space mb-0 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-calendar-week text-truncate"></i> 20 august 2020</small>
+                        </div>
+                        <div class="letter-space mb-0 ms-3 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-mortarboard-fill"></i> Utrecht University</small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
 
+              <div id="research" class="fade-out-siblings mt-5">
+                <div class="card mb-2">
+                  <a class="text-decoration-none text-white p-4" href="https://github.com/Ernst-Paul/Imputation-Evaluation" target="_blank">
+                    <div class="card-body">
+                      <span class="text-uppercase fw-bold letter-space text-truncate">Master thesis</span>
+                      <h4 class="fw-semibold ">Invalid Performance Evaluation of Imputation Methods: A Warning Against Using the (Root) Mean Squared Error</h4>
+                      <p class="small mb-3 text-truncate"><span class="opacity-50">We investigated the validity of the RMSE as an performance measure</span> &#128200; <span class="opacity-50">by examining if it favors proper imputation methods.</span></p>
+                      <div class="d-flex flex-row bd-highlight mb-0">
+                        <div class="letter-space mb-0 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-calendar-week text-truncate"></i> 20 august 2020</small>
+                        </div>
+                        <div class="letter-space mb-0 ms-3 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-mortarboard-fill"></i> Utrecht University</small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="card mb-2">
+                  <a class="text-decoration-none text-white p-4" href="https://github.com/Ernst-Paul/Win-Ratio" target="_blank">
+                    <div class="card-body">
+                      <span class="text-uppercase fw-bold letter-space text-truncate">Master thesis</span>
+                      <h4 class="fw-semibold">Comparing the Win Ratio to Traditional Time-To-Event Analysis for Composite Endpoint</h4>
+                      <p class="small mb-3 text-truncate"><span class="opacity-50">We explored the impact of the duration of follow-up times</span> &#9201; <span class="opacity-50">and between-person</span> &#128101; <span class="opacity-50">variation in follow-up times on the statistical power of both methods.</span></p>
+                      <div class="d-flex flex-row bd-highlight mb-0">
+                        <div class="letter-space mb-0 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-calendar-week text-truncate"></i> 20 august 2020</small>
+                        </div>
+                        <div class="letter-space mb-0 ms-3 opacity-50 fw-semibold text-uppercase">
+                          <small><i class="bi bi-mortarboard-fill"></i> Utrecht University</small>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div id="experience" class="mt-5">
+                <h3 class="fw-semibold">Experience</h3>
+
+                <div class="row">
+                  <div class="col-3 text-uppercase fw-bold letter-space">
+                    2022 - present
+                  </div>
+                  <div class="col-1">
+                    <div class="dot mx-auto appear"></div>
+                    <div class="line mx-auto opacity-50"></div>
+                  </div>
+                  <div class="col-8">
+                    <h4 class="fw-semibold" style="margin-top:-5px;">R developer</h4>
+                    <p class="small opacity-50">In this role, I assist in the development of Dessert, a package that standardizes the evaluation process for data analysis.</p>
+                    <p class="letter-space mb-4 opacity-50 fw-semibold text-uppercase"><small>
+                      <i class="bi bi-buildings"></i> utrecht university</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3 text-uppercase fw-bold letter-space">
+                    2022 - present
+                  </div>
+                  <div class="col-1">
+                    <div class="dot mx-auto appear"></div>
+                    <div class="line mx-auto opacity-50"></div>
+                  </div>
+                  <div class="col-8">
+                    <h4 class="fw-semibold" style="margin-top:-5px;">Teaching Assistant</h4>
+                    <p class="small opacity-50">In this position, I provide support for courses within the Biomedical Sciences department.</p>
+                    <p class="letter-space mb-4 opacity-50 fw-semibold text-uppercase"><small>
+                      <i class="bi bi-buildings"></i> utrecht university</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3 text-uppercase fw-bold letter-space">
+                    2021 - present
+                  </div>
+                  <div class="col-1">
+                    <div class="dot mx-auto appear"></div>
+                    <div class="line mx-auto opacity-50"></div>
+                  </div>
+                  <div class="col-8">
+                    <h4 class="fw-semibold" style="margin-top:-5px;">Freelance Data Scientist</h4>
+                    <p class="small opacity-50">As an independent data scientist, I provide support on a variety of projects.</p>
+                    <p class="letter-space mb-4 opacity-50 fw-semibold text-uppercase"><small>
+                      <i class="bi bi-buildings"></i> swens data science</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3 text-uppercase fw-bold letter-space">
+                    2019 - 2022
+                  </div>
+                  <div class="col-1">
+                    <div class="dot mx-auto appear"></div>
+                  </div>
+                  <div class="col-8">
+                    <h4 class="fw-semibold" style="margin-top:-5px;">Website Content Manager</h4>
+                    <p class="small opacity-50">I was responsible for overseeing and maintaining the content on the university's website.</p>
+                    <p class="letter-space mb-4 opacity-50 fw-semibold text-uppercase"><small>
+                      <i class="bi bi-buildings"></i> Eindhoven University of Technology</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div id="education" class="mt-5">
+                <h3 class="fw-semibold">Education</h3>
+                <div class="row">
+                  <div class="col-3 text-uppercase fw-bold letter-space">
+                    2021 - present
+                  </div>
+                  <div class="col-1">
+                    <div class="dot mx-auto appear"></div>
+                    <div class="line mx-auto opacity-50"></div>
+                  </div>
+                  <div class="col-8">
+                    <h4 class="fw-semibold" style="margin-top:-5px;">MSc Methodology and Statistics for the Behavioural, Biomedical and Social Sciences</h4>
+                    <p class="small opacity-50">In this Master program I learned how to evaluate and apply methodological and statistical approaches.</p>
+                    <p class="letter-space mb-4 opacity-50 fw-semibold text-uppercase"><small>
+                      <i class="bi bi-mortarboard-fill"></i> Utrecht University</small>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-3 text-uppercase fw-bold letter-space">
+                    2020 - 2021
+                  </div>
+                  <div class="col-1">
+                    <div class="dot mx-auto appear"></div>
+                  </div>
+                  <div class="col-8">
+                    <h4 class="fw-semibold" style="margin-top:-5px;">MSc Applied Data Science</h4>
+                    <p class="small opacity-50">In this one-year fast-paced academic Master's programme, I learned data science techniques in the domains of Health and Geo Science.</p>
+                    <p class="letter-space mb-0 opacity-50 fw-semibold text-uppercase"><small>
+                      <i class="bi bi-mortarboard-fill"></i> Utrecht University</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="my-5 small opacity-25 text-center">
+                © 2023 Ernst Paul Swens, All Rights Reserved
+              </div>
+            </div>
+
+        </div>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <div id="bottom"></div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+  </script>
+
   </body>
 </html>
