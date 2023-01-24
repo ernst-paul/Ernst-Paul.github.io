@@ -10,6 +10,14 @@
   display: none;
 }
 
+.flex-group-item:hover {
+  opacity: 0.75;
+}
+
+.flex-group-item {
+  opacity: 0.5;
+}
+
 .list-group-item.active {
   opacity: 1.0;
   padding-left: 15px;
