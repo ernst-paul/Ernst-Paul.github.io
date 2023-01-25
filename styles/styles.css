@@ -6,8 +6,24 @@
   transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
+#side-nav {
+  padding-top: 75px;
+}
+
 #side-nav::-webkit-scrollbar {
   display: none;
+}
+
+@media (min-width: 992px) {
+  #side-nav {
+    overflow-y: scroll;
+    max-height: 100vh;
+    padding-top: 75px;
+  }
+
+  #side-nav::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .flex-group-item:hover {
@@ -80,9 +96,9 @@
 }
 
 .dot {
-  width: 16px;
-  height: 16px;
-  border-radius: 12px;
+  width: 14px;
+  height: 14px;
+  border-radius: 7px;
   background-color: white;
   transition: 300ms background-color;
 }
